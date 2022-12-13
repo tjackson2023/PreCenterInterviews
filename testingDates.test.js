@@ -16,11 +16,13 @@ describe('dateFunctionTests', () => {
     it('setDatePlus1 returns the next date (tomorrow)', () => {
         const tomorrow = setDatePlus1(testDateInput);
         const expected = new Date().setDate(new Date().getDate() + 1);
-        assert(dateEqual(tomorrow, expected));
+        const datesAreEqual = dateEqual(tomorrow, expected);
+        assert(datesAreEqual);
     })
     it('setDateMinus1 returns the previous date (yesterday)', () => {
         const yesterday = setDateMinus1(testDateInput);
         const expected = new Date().setDate(new Date().getDate() - 1);
-        assert(dateEqual(yesterday, expected));
+        const datesAreEqual = dateEqual(yesterday, expected);
+        assert(datesAreEqual);
     })
 })
