@@ -11,7 +11,7 @@ export function cleanMe(p, doSplit) {
   // trim string elements
   p = p.map(x => (typeof x === 'string' ? x.trim() : x));
 
-  // remove empty string, if present
+  // remove null/empty values from list, if present
   p = p.filter(x => x !== '');
 
   // sort
