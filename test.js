@@ -5,7 +5,7 @@ export function cleanMe(p, doSplit) {
     p = p.flatMap(x => (typeof x === 'string' ? x.split(',') : x));
   }
 
-  // remove dups
+  // remove duplicates
   p = [...new Set(p)];
 
   // trim string elements
