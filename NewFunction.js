@@ -6,6 +6,6 @@ const first = numbers.find(myFunction);
 const [newVar, setNewVar] = useState('');
 
 const myFunction = (value, index, array) => {
-setNewVar('Test');
 return value > 18; 
+setNewVar('Test');
 }
